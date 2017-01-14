@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ch">
+    <head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="mg-calendar.css" type="text/css" />
+    </head>
+ <body onload="printDate(new Date())">
+    <table class="cal">
+		<caption>
+			<span class="today" onclick="today()">今</span>
+			<div class="right-caption">
+				<a class="prev-month" onclick="prevMonth()">&lt;</a>
+				<span id="caption-title">&nbsp;</span>
+				<a class="next-month" onclick="nextMonth()">&gt;</a>
+			</div>
+		</caption>
+
+		<thead>
+			<tr>
+				<th>一</th>
+				<th>二</th>
+				<th>三</th>
+				<th>四</th>
+				<th>五</th>
+				<th>六</th>
+				<th>日</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td id="11">&nbsp;</td>
+				<td id="12">&nbsp;</td>
+				<td id="13">&nbsp;</td>
+				<td id="14">&nbsp;</td>
+				<td id="15">&nbsp;</td>
+				<td id="16">&nbsp;</td>
+				<td id="17">&nbsp;</td>
+			</tr>
+			<tr>
+				<td id="18">&nbsp;</td>
+				<td id="19">&nbsp;</td>
+				<td id="20">&nbsp;</td>
+				<td id="21">&nbsp;</td>
+				<td id="22">&nbsp;</td>
+				<td id="23">&nbsp;</td>
+				<td id="24">&nbsp;</td>
+			</tr>
+			<tr>
+				<td id="25">&nbsp;</td>
+				<td id="26">&nbsp;</td>
+				<td id="27">&nbsp;</td>
+				<td id="28">&nbsp;</td>
+				<td id="29">&nbsp;</td>
+				<td id="30">&nbsp;</td>
+				<td id="31">&nbsp;</td>
+			</tr>
+			<tr>
+				<td id="32">&nbsp;</td>
+				<td id="33">&nbsp;</td>
+				<td id="34">&nbsp;</td>
+				<td id="35">&nbsp;</td>
+				<td id="36">&nbsp;</td>
+				<td id="37">&nbsp;</td>
+				<td id="38">&nbsp;</td>
+			</tr>
+			<tr>
+				<td id="39">&nbsp;</td>
+				<td id="40">&nbsp;</td>
+				<td id="41">&nbsp;</td>
+				<td id="42">&nbsp;</td>
+				<td id="43">&nbsp;</td>
+				<td id="44">&nbsp;</td>
+				<td id="45">&nbsp;</td>
+			</tr>
+			<tr>
+				<td id="46">&nbsp;</td>
+				<td id="47">&nbsp;</td>
+				<td id="48">&nbsp;</td>
+				<td id="49">&nbsp;</td>
+				<td id="50">&nbsp;</td>
+				<td id="51">&nbsp;</td>
+				<td id="52">&nbsp;</td>
+			</tr>
+		</tbody>
+
+	</table>
+	<script src="mg-calendar.js" type="text/javascript"></script>
+
+ </body>
+
+</html>
