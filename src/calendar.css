@@ -1,0 +1,136 @@
+
+/*整体设置*/
+.cal {
+	border-spacing: 0;
+	text-align: center;
+	font-family: '宋体';
+}
+.cal td,
+.cal th {
+	padding: 0;
+	width:38px;
+	height:30px;
+}
+
+/*caption*/
+.cal caption {
+	background-color: #d4dde6;
+	color: black;
+	font-size: 1em;
+	padding-top: 9px;
+
+}
+.cal .right-caption {
+	display: inline-block;
+	float: right;
+	background-color: #C0C8D2;
+	border-radius: 50px;
+	margin-right: 8px;
+
+	border-top: solid 1px #e0e0e1;
+	border-right: solid 1px #9f9fa1;
+	border-bottom: solid 1px #acacad;
+	border-left: solid 1px #dfdfe0;
+}
+.prev-month {
+	font-weight: 700;
+	cursor: pointer;
+	padding: 0px 10px;
+}
+.cal caption #caption-title{
+	padding: 3px 6px;
+	font-weight: bolder;
+	font-size: 16px;
+	letter-spacing: 1px;
+	/*垂直居中的关键*/
+	display: inline-block;
+}
+.next-month{
+	font-weight: 700;
+	cursor: pointer;
+	padding: 6px 10px;
+}
+.cal .today {
+	float: left;
+	cursor: pointer;
+	padding: 6px 7px;
+	display: inline-block;
+	font-size: 13px;
+
+	background-color: #6d8ab7;
+	color: white;
+	border-radius: 50px;
+	margin-left: 8px;
+}
+.cal caption .today:hover{
+	color: #C0C8D2;
+}
+.cal caption a:hover {
+	color: #6D8AB7;
+}
+
+/*thead*/
+.cal thead {
+    background-color: #d4dde6;
+}
+.cal thead th{
+    border-bottom: solid 1px #a9bacb;
+    font-size: 13px;
+}
+
+/*	tbody */
+.cal tbody td{
+	border-top: solid 1px #e0e0e1;
+	border-right: solid 1px #9f9fa1;
+	border-bottom: solid 1px #acacad;
+	border-left: solid 1px #dfdfe0;
+
+	background-color: #c0c8d2;
+	color: #333;
+	padding: 2px 0;
+}
+
+/*由js将当前月cell中的class设置为currentMonth*/
+.cal td.currentMonth {
+	cursor: pointer;
+}
+/*
+	为什么focus没有效果？
+	因为是td，而不是a,所以不能获得焦点，这有点奇怪
+*/
+.cal td.currentMonth:hover,
+.cal td.currentMonth:active,
+.cal td.currentMonth:focus {
+	background-color: #6d8ab7;
+	color: white;
+	text-shadow: 1px 1px 2px #22456b;
+}
+
+/* 由js将今天cell中的class设置为selected */
+.cal tbody .selected {
+	background-color: #6d8ab7;
+	color: white;
+	text-shadow: 1px 1px 2px #22456b;
+	border-top: solid 1px #2a3647;
+	border-right: solid 1px #465977;
+	border-bottom: solid 1px #576e92;
+	border-left: solid 1px #466080;
+}
+/*鼠标移动上去的cell边框效果*/
+.cal tbody td:hover	{
+	border-top: solid 1px #2a3647;
+	border-right: solid 1px #465977;
+	border-bottom: solid 1px #576e92;
+	border-left: solid 1px #466080;
+}
+/* null */
+.cal .null {
+	background-color: #d0d9e2;
+	color: #a4a4a4;
+}
+.cal .null:hover {
+	border-top: solid 1px #e0e0e1;
+	border-right: solid 1px #9f9fa1;
+	border-bottom: solid 1px #acacad;
+	border-left: solid 1px #dfdfe0;
+}
