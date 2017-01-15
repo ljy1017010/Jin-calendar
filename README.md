@@ -1,4 +1,15 @@
-# MG-calendar
-一个小巧的日历程序
+说明
+===
 
-A cleverish calendar
+这是一个用原生javascript编写的日历程序，除样式参照了《css mastery》第二版中的练习外，所有代码均由自己编写。
+
+有兴趣的朋友可以在此基础上进行扩展。
+
+<img src="img/calendar-css.png">
+
+##在线预览.
+
+请点击：[Jin-calendar](https://ljy1017010.github.io/Jin-calendar/).
+
+##LICENCE
+MIT
