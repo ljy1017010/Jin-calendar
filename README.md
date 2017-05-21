@@ -5,8 +5,6 @@
 
 感兴趣的朋友可以在此基础上进行扩展和完善。
 
-<img src="img/Jin-calendar.png">
-
 ## 在线预览.
 
 请点击：[Jin-calendar](https://ljy1017010.github.io/Jin-calendar/).
